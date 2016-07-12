@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_bj2DAEewEeadi6EKfEsn6w">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_hSp_8EewEeadi6EKfEsn6w" featurename="commands" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Command" xmi:id="_kLtQsEewEeadi6EKfEsn6w" elementId="com.vogella.plugin.first.command.0" commandName="Sample"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_n0NocEewEeadi6EKfEsn6w" featurename="handlers" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Handler" xmi:id="_qMfHYEewEeadi6EKfEsn6w" elementId="com.vogella.plugin.first.handler.0" contributionURI="bundleclass://com.vogella.plugin.first/com.vogella.plugin.first.handlers.SampleE4Handler" command="_kLtQsEewEeadi6EKfEsn6w"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_uoCFoEewEeadi6EKfEsn6w" featurename="menuContributions" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="menu:MenuContribution" xmi:id="_0uaOAEewEeadi6EKfEsn6w" elementId="com.vogella.plugin.first.menucontribution.0" positionInParent="after=additions" parentId="org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_Exmk0EexEeadi6EKfEsn6w" elementId="com.vogella.plugin.first.menu.newMenu" label="e4 sample menu">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_My6I0EexEeadi6EKfEsn6w" elementId="com.vogella.plugin.first.handledmenuitem.e4samplemenu" label="e4 sample menu" iconURI="platform:/plugin/com.vogella.plugin.first/icons/sample.gif"/>
+      </children>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_UoqkIEexEeadi6EKfEsn6w" featurename="trimContributions" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="menu:TrimContribution" xmi:id="_wd8o8EexEeadi6EKfEsn6w" elementId="com.vogella.plugin.first.trimcontribution.0" parentId="org.eclipse.ui.main.toolbar">
+      <children xsi:type="menu:ToolBar" xmi:id="_ImCDQEeyEeadi6EKfEsn6w" elementId="com.vogella.plugin.first.toolbar.0">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_I3veUEeyEeadi6EKfEsn6w" elementId="com.vogella.plugin.first.handledtoolitem.e4Button" label="e4 button" command="_kLtQsEewEeadi6EKfEsn6w"/>
+      </children>
+    </elements>
+  </fragments>
+</fragment:ModelFragments>
